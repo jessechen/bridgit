@@ -5,7 +5,23 @@ body {
 }
 
 .canvas {
+	position: absolute;
+	left: 5vmin;
+	top: 5vmin;
 	border: 1px solid #ccc;
     height: 90vmin;
 	width: 90vmin;
+}
+
+.island {
+	stroke: #333;
+	stroke-width: 4px;
+	fill: #fff;
+	r: 40px;
+}
+
+.label {
+	font-size: 60px;
+	text-anchor: middle;
+	dominant-baseline: central;
 }
