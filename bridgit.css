@@ -11,16 +11,36 @@ body {
 	border: 1px solid #ccc;
     height: 90vmin;
 	width: 90vmin;
+	user-select: none;
+}
+
+.node {
+	stroke: #333;
+	cursor: pointer;
 }
 
 .island {
-	stroke: #333;
 	stroke-width: 4px;
 	fill: #fff;
 	r: 40px;
 }
 
+.node:hover .island {
+	fill: #8ff;
+}
+
+.node:active .island,
+.node:focus .island {
+	fill: #44f;
+}
+
+.node:active .label {
+	stroke: #fff;
+	fill: #fff;
+}
+
 .label {
+	fill: #333;
 	font-size: 60px;
 	text-anchor: middle;
 	dominant-baseline: central;
