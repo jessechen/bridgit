@@ -23,14 +23,14 @@ body {
 	stroke-width: 4px;
 	fill: #fff;
 	r: 40px;
+	pointer-events: visible;
 }
 
 .node:hover .island {
 	fill: #8ff;
 }
 
-.node:active .island,
-.node:focus .island {
+.node:active .island {
 	fill: #44f;
 }
 
@@ -39,9 +39,25 @@ body {
 	fill: #fff;
 }
 
+.node .island.down,
+.node .island.up {
+	fill: #848;
+}
+
 .label {
 	fill: #333;
 	font-size: 60px;
 	text-anchor: middle;
 	dominant-baseline: central;
+	pointer-events: none;
+}
+
+.bridge {
+	stroke: #333;
+	stroke-width: 4px;
+	cursor: pointer;
+}
+
+.bridge:hover {
+	stroke: #8ff;
 }
